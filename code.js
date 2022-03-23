@@ -4,10 +4,9 @@ function helloWorld() {
 }
 
 function sayHello() {
-
     return "Hello, World!";
-
-
-
 }
 
+function isFive(){
+
+}
