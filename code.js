@@ -3,6 +3,7 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-function sayHello() {
-    return "Hello, Pat!";
+function sayHello(input) {
+    return "Hello, " + "Pat" + "!";
 }
+
