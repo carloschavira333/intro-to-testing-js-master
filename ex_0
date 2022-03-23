@@ -4,21 +4,32 @@ Exercise #0 - look, guess, test, conclude
     b. Open code.js > change helloWorld() to hello()
     c. refresh browser
     d. Answer these questions:
-        What do you notice about the test results?
-        What are some ways you think we could get the tests to turn green again?
+        What do you notice about the test results? 4 specs and 4 failures
+        What are some ways you think we could get the tests to turn green again? Change hello() to helloWorld()
     e. Open code.js > change hello() to helloWorld()
 2. Inside of the helloWorld function in code.js, replace return "Hello, World!" with return "Hello".
     g. Run the tests by refreshing report.html in your browser.
     h. Answer these questions:
-        Which tests fail? Which tests are still green?
+        Which tests fail? should return the string "Hello, World!" when executed
+        Which tests are still green?
+        should be a defined function
+        should never return 'undefined' when called
+        should return a string when called
     i. Change back to "Hello, World!"
 3. Inside of the helloWorld function in code.js, change the line return "Hello, World!" to console.log("Hello, World!").
     k. Then refresh report.html.
     l. Answer questions:
-        What happens to the tests? Identify which tests stay green and which ones turn red.
-        Why do you think that is?
-        Consider, what is the return value of a console.log? hint, it's always the same
-        Consider, what is the return value of a return?
+        What happens to the tests? 3 fails and 1 pass
+        Identify which tests stay green and which ones turn red.
+            Turn red:
+                should return the string "Hello, World!" when executed
+                should never return 'undefined' when called
+                should return a string when called
+            Stayed green?
+                should be a defined function
+        Why do you think that is? Because one of the tests was checking for a defined function and we still have a defined function.
+        (Consider, what is the return value of a console.log? hint, it's always the same
+        Consider, what is the return value of a return?)
     m. Fix your helloWorld implementation so that it greens all the tests.
 4. Now, let's purposefully put a syntax error into the helloWorld function, to see what happens with the tests.
     a. Open up code.js and remove the closing curly brace from the end of the helloWorld function definition.
@@ -34,5 +45,8 @@ Exercise #0 - look, guess, test, conclude
         const helloWorld = function() {
             return "Hello, World!";
         }
-    b. Do all the tests stay green or not? Why or why not? Double check your syntax. These are interchangeable because functions are first class citizens in the JS language.
+    b. Do all the tests stay green or not? Yes
+
+    Why? According to the notes these two functions are interchangeable because functions are first class citizens in the JS language.
+    (Double check your syntax. These are interchangeable because functions are first class citizens in the JS language.)
     c. Before moving on, ensure that all tests are green.
