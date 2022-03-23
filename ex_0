@@ -1,0 +1,38 @@
+Exercise #0 - look, guess, test, conclude
+1. change the name of the helloWorld function to hello. Then refresh report.html in your browser.
+    a. Open report.html
+    b. Open code.js > change helloWorld() to hello()
+    c. refresh browser
+    d. Answer these questions:
+        What do you notice about the test results?
+        What are some ways you think we could get the tests to turn green again?
+    e. Open code.js > change hello() to helloWorld()
+2. Inside of the helloWorld function in code.js, replace return "Hello, World!" with return "Hello".
+    g. Run the tests by refreshing report.html in your browser.
+    h. Answer these questions:
+        Which tests fail? Which tests are still green?
+    i. Change back to "Hello, World!"
+3. Inside of the helloWorld function in code.js, change the line return "Hello, World!" to console.log("Hello, World!").
+    k. Then refresh report.html.
+    l. Answer questions:
+        What happens to the tests? Identify which tests stay green and which ones turn red.
+        Why do you think that is?
+        Consider, what is the return value of a console.log? hint, it's always the same
+        Consider, what is the return value of a return?
+    m. Fix your helloWorld implementation so that it greens all the tests.
+4. Now, let's purposefully put a syntax error into the helloWorld function, to see what happens with the tests.
+    a. Open up code.js and remove the closing curly brace from the end of the helloWorld function definition.
+    b. Refresh report.html in your browser.
+    c. Fix the syntax error and confirm that tests are all green.
+5. Now, go to code.js and
+    a. replace the function statement for helloWorld with a function experession.
+        // function statement syntax
+        function helloWorld() {
+            return "Hello, World!";
+        }
+        // function expression syntax (assigning an anonymous function to a variable)
+        const helloWorld = function() {
+            return "Hello, World!";
+        }
+    b. Do all the tests stay green or not? Why or why not? Double check your syntax. These are interchangeable because functions are first class citizens in the JS language.
+    c. Before moving on, ensure that all tests are green.
