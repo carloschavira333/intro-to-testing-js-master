@@ -14,15 +14,14 @@ Step 1: Let's write the smallest test possible.
         b. an it,
         c. and an expect to assert that sayHello is a defined function. Use your tests for helloWorld as a guide.
 Step 2: Run all the tests. At this point, we're expecting and hoping for a single, red failing test that we just now authored.
-
+    Results:
+        sayHello
+        x should be a defined function
 Step 3: Now, let's go to code.js
         a. and create an empty function definition for sayHello.
-            ****question: will this a normal function? Like sayHello() {};
-
 Step 4: Run all the tests. We're expecting all tests, including the new test for sayHello to be green.
-**** stop here to test ******
+    Result: All tests are green
 Step 5: Given that this is our first (tiny) test and our first implementation, there is not yet the opportunity to refactor.
-
 Step 6: The last TDD step is to "repeat" the process of adding another test. What we're going to do is add our work to git and then move to Exercise #2, which is to add the second test.
 Before proceeding, add your work to GitHub!
 Open your terminal and navigate to the local directory where you cloned this project.
